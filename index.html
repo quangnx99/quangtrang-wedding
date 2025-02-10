@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xuân Quang 💖 Huyền Trang</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta property="og:title" content="Xuân Quang 💖 Huyền Trang" />
+    <meta property="og:image" content="https://quangtrangwedding.website/images/bg.jpg" />
+    <meta property="og:description" content="Xuân Quang 💖 Huyền Trang" />
+    <meta property="og:url" content="https://quangtrangwedding.website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="libs/css2.css" rel="stylesheet">
     <link href="./libs/css3.css" rel="stylesheet">
@@ -24,10 +32,17 @@
             mix-blend-mode: screen;
         }
     </style>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
 
 <body>
+    <div class="marquee-container">
+        <div class="marquee" id="marqueeContent">
+            <!-- Messages will be inserted here -->
+        </div>
+    </div>
     <img src="./images/music_player.png" alt=""
-        class="fixed top-0 right-5 max-sm:w-20 max-sm:h-20 md:w-32 md:h-32 cursor-pointer touch-pan-x touch-pan-y"
+        class="fixed top-10 right-5 max-sm:w-20 max-sm:h-20 md:w-32 md:h-32 cursor-pointer touch-pan-x touch-pan-y"
         onclick="toggleMusic()" draggable="true" id="musicPlayer">
     <script>
         function toggleMusic() {
@@ -39,11 +54,11 @@
             }
         }
     </script>
-    <audio id="backgroundMusic" loop class="absolute top-0 right-0" autoplay>
+    <audio id="backgroundMusic" loop class="absolute top-0 right-0">
         <source src="./images/HonCaYeu-DucPhuc-6222425.mp3" type="audio/mpeg">
     </audio>
     <div class="w-full h-[200px] sm:h-[500px] md:h-[800px]">
-        <img src="./images/bg.jpg" alt="logo" class="w-full h-full object-cover object-center mx-auto block">
+        <img src="./images/bg.jpg" alt="logo" class="w-full h-full object-cover mx-auto block">
     </div>
 
     <div class="mt-5" data-aos="fade-up">
@@ -60,12 +75,17 @@
         </section>
 
         <section id="story" class="my-5 relative flex justify-center items-center flex-col gap-2" data-aos="fade-up">
-            <div class="text-center text-5xl md:text-6xl sm:text-4xl">
+            <div class="text-center text-5xl md:text-6xl sm:text-4xl flex items-center">
                 <span class="font-playwrite text-gray-700 block sm:inline md:text-7xl"
                     style="font-family: 'Playfair Display', serif;">Xuân
                     Quang</span>
                 <span class="mx-4 text-2xl md:text-3xl sm:text-xl text-gray-700 block sm:inline my-2 sm:my-0"
-                    style="font-family: 'Playwrite IN', cursive;">and</span>
+                    style="font-family: 'Playwrite IN', cursive;">
+                    <div class="flex justify-center items-center">
+                        <img src="./images/ring.png" alt="Wedding Ring"
+                            class="w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 object-contain">
+                    </div>
+                </span>
                 <span class="font-playwrite text-gray-700 block sm:inline md:text-7xl"
                     style="font-family: 'Playfair Display', serif;">Huyền
                     Trang</span>
@@ -73,21 +93,19 @@
 
             <div
                 class="text-center text-xl md:text-2xl sm:text-lg text-gray-700 block sm:inline md:mt-5 sm:my-0 font-semibold">
-                Được tổ chức vào
+                <span class="text-2xl">vào lúc 13 giờ 05 phút</span>
             </div>
 
             <div
-                class="grid grid-cols-3 divide-gray-700 text-center text-2xl md:text-5xl sm:text-xl text-gray-700 items-center md:mt-10">
+                class="grid grid-cols-3 divide-gray-700 text-center text-2xl md:text-5xl sm:text-xl text-gray-700 items-center md:mt-10 max-sm:py-5">
                 <div class="px-2 border-t-4 border-b-4 border-gray-700 py-2">
-                    <p class="text-xl md:text-3xl font-medium">13:05</p>
-                    <p class="text-2xl md:text-4xl uppercase">chủ nhật</p>
+                    <p class="text-2xl max-sm:text-xl md:text-4xl uppercase">chủ nhật</p>
                 </div>
-                <div class="px-2 font-bold text-[80px] md:text-[100px] py-2 text-red-700">
-                    23
+                <div class="px-2 font-bold max-sm:text-4xl text-[80px] md:text-[100px] text-red-700 pb-3">
+                    23.02
                 </div>
-                <div class="px-2 border-t-4 border-b-4 py-2l border-gray-700">
-                    <p class="text-xl md:text-3xl font-medium">Tháng 02</p>
-                    <p class="text-2xl md:text-4xl">Năm 2025</p>
+                <div class="px-2 border-t-4 border-b-4 py-2 border-gray-700">
+                    <p class="text-2xl max-sm:text-xl md:text-4xl">Năm 2025</p>
                 </div>
             </div>
 
@@ -96,7 +114,7 @@
             </div>
 
             <div class="text-center md:text-4xl sm:text-base text-gray-700">
-                Tại gia đình
+                Tại gia đình nhà trai
             </div>
 
             <div class="text-center md:text-4xl sm:text-base text-gray-700 font-bold">
@@ -105,16 +123,13 @@
 
             <div class="flex flex-col sm:flex-row gap-8 sm:gap-20 items-center justify-center mt-8 text-gray-700">
                 <div class="px-2 flex flex-col items-center justify-center sm:text-left">
-                    <div class="font-normal text-2xl sm:text-2xl mb-3 sm:mb-2">Nhà trai</div>
+                    <div class="font-normal text-2xl max-sm:text-xl mb-3 sm:mb-2">Nhà trai</div>
                     <div class="text-xl sm:text-xl md:text-2xl"><b>Ông Nguyễn Văn Biển</b></div>
                     <div class="text-xl sm:text-xl md:text-2xl"><b>Bà Lê Thị Dẫn</b></div>
                 </div>
-                <div class="flex justify-center items-center">
-                    <img src="./images/ring.png" alt="Wedding Ring"
-                        class="w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 object-contain">
-                </div>
+
                 <div class="px-2 flex flex-col items-center justify-center sm:text-left">
-                    <div class="font-normal text-2xl sm:text-2xl mb-3 sm:mb-2">Nhà gái</div>
+                    <div class="font-normal text-2xl max-sm:text-xl mb-3 sm:mb-2">Nhà gái</div>
                     <div class="text-xl sm:text-xl md:text-2xl"><b>Ông Nguyễn Văn Hậu</b></div>
                     <div class="text-xl sm:text-xl md:text-2xl"><b>Bà Lê Thị Hiền</b></div>
                 </div>
@@ -128,18 +143,16 @@
                     <img src="./images/18.jpg" alt="Cô dâu"
                         class="w-32 h-32 sm:w-40 sm:h-40 md:w-[350px] md:h-[350px] rounded-full object-cover">
                     <div class="flex-1">
-                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Tình yêu không
-                            phải là nhìn nhau mà là
-                            cùng nhìn về một hướng"</p>
+                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Nếu em có 10 thì em sẽ cho anh
+                            1, 1 gia đình nhỏ, 1 hạnh phúc to, 1 lòng bên anh trọn đời"</p>
                         <p class="mt-2 text-sm md:text-lg text-center sm:text-right">- Huyền Trang -</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col-reverse sm:flex-row items-center justify-center gap-4 md:gap-8">
                     <div class="flex-1">
-                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Em là định mệnh
-                            của anh, là người anh
-                            nguyện dành trọn đời để yêu thương"</p>
+                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Yêu em yêu cả 1 đời, thương em
+                            thương cả 1 đời thanh xuân"</p>
                         <p class="mt-2 text-sm md:text-lg text-center sm:text-left">- Xuân Quang -</p>
                     </div>
                     <img src="./images/19.jpg" alt="Chú rể"
@@ -186,44 +199,35 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="./images/4.jpg" alt="Ảnh cưới 1" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/5.jpg" alt="Ảnh cưới 2" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/6.jpg" alt="Ảnh cưới 3" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/7.jpg" alt="Ảnh cưới 4" class="w-full h-64 object-cover rounded-lg">
+                <img src="./images/4.jpg" alt="Ảnh cưới 1" class="w-full h-96 object-cover rounded-lg">
+                <img src="./images/10.jpg" alt="Ảnh cưới 3" class="w-full h-96 object-cover rounded-lg">
+                <img src="./images/5.jpg" alt="Ảnh cưới 2" class="w-full h-96 object-cover rounded-lg">
+                <img src="./images/7.jpg" alt="Ảnh cưới 4" class="w-full h-96 object-cover rounded-lg">
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <div class="md:col-span-2" data-aos="fade-up">
                     <img src="./images/8.jpg" alt="Ảnh cưới lớn" class="w-full h-[500px] object-cover rounded-lg">
                 </div>
-                <div class="grid grid-cols-1 gap-4" data-aos="fade-up">
-                    <img src="./images/9.jpg" alt="Ảnh cưới nhỏ 1" class="w-full h-60 object-cover rounded-lg">
-                    <img src="./images/10.jpg" alt="Ảnh cưới nhỏ 2" class="w-full h-60 object-cover rounded-lg">
-                </div>
+                <img src="./images/6.jpg" alt="Ảnh cưới nhỏ 2" class="w-full h-[500px] object-cover rounded-lg">
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4" data-aos="fade-up">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <img src="./images/11.jpg" alt="Ảnh cưới nhỏ 1"
-                        class="w-full h-[300px] md:h-[400px] object-cover rounded-lg">
+                    <img src="./images/2.jpg" alt="Ảnh cưới nhỏ 1"
+                        class="w-full h-[500px] md:h-[400px] object-cover rounded-lg">
                     <img src="./images/13.jpg" alt="Ảnh cưới nhỏ 2"
-                        class="w-full h-[300px] md:h-[400px] object-cover rounded-lg">
+                        class="w-full h-[500px] md:h-[400px] object-cover rounded-lg">
                 </div>
                 <div>
-                    <img src="./images/2.jpg" alt="Ảnh cưới lớn"
-                        class="w-full h-[300px] md:h-[400px] object-cover rounded-lg">
+                    <img src="./images/11.jpg" alt="Ảnh cưới lớn"
+                        class="w-full h-[500px] md:h-[400px] object-cover rounded-lg">
                 </div>
             </div>
 
             <div class="mt-4" data-aos="fade-up">
-                <img src="./images/bg.jpg" alt="Ảnh cưới lớn" class="w-full h-[600px] object-cover rounded-lg">
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4" data-aos="fade-up">
-                <img src="./images/1.jpg" alt="Ảnh cưới 1" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/16.jpg" alt="Ảnh cưới 2" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/17.jpg" alt="Ảnh cưới 3" class="w-full h-64 object-cover rounded-lg">
-                <img src="./images/18.jpg" alt="Ảnh cưới 4" class="w-full h-64 object-cover rounded-lg">
+                <img src="./images/22.jpg" alt="Ảnh cưới lớn"
+                    class="w-full max-sm:h-[300px] h-[600px] object-cover rounded-lg">
             </div>
         </section>
 
@@ -246,7 +250,7 @@
                 </div>
             </div>
 
-            <form class="max-w-lg mx-auto space-y-6">
+            <form class="max-w-lg mx-auto space-y-6" id="wishForm">
                 <div class="flex flex-col gap-2">
                     <label for="name" class="font-medium text-gray-700 flex gap-1 items-center">
                         <p>Xin quý danh của thí chủ</p>
@@ -278,19 +282,19 @@
                     <label class="font-medium text-gray-700">Có tham dự được không nè?</label>
                     <div class="flex gap-6">
                         <label class="flex items-center gap-2">
-                            <input type="radio" name="attendance" value="Có" checked
+                            <input type="radio" name="attendance" value="1" checked
                                 class="w-4 h-4 text-[#B82132] focus:ring-[#B82132]">
                             <span class="text-gray-700">Có</span>
                         </label>
                         <label class="flex items-center gap-2">
-                            <input type="radio" name="attendance" value="Không"
+                            <input type="radio" name="attendance" value="0"
                                 class="w-4 h-4 text-[#B82132] focus:ring-[#B82132]">
                             <span class="text-gray-700">Không</span>
                         </label>
                     </div>
                 </div>
 
-                <button type="button" id="submit"
+                <button type="submit"
                     class="w-[200px] mx-auto block bg-[#B82132] text-white py-3 px-6 rounded-lg hover:bg-[#B82132] transition duration-200 relative">
                     <span class="loading-text">Gửi lời chúc</span>
                     <span
@@ -334,61 +338,8 @@
             duration: 1000,
         });
     </script>
-    <script>
-        const form = document.getElementById('submitForm');
-        const loadingDiv = document.querySelector('.loading');
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw1LdNbd6sMSLGk8tj3I0i8aZatiKuRgccgZqnL9JeQTevvcgY-_ubLgDip3frWx_3-Vw/exec';
-
-        document.getElementById('submit').addEventListener('click', e => {
-            e.preventDefault();
-            loadingDiv.style.display = 'block';
-            document.getElementById('submit').classList.add('opacity-50', 'cursor-not-allowed');
-            document.getElementById('submit').disabled = true;
-
-            // Tạo object chứa dữ liệu form
-            const formData = {
-                name: document.getElementById('name')?.value,
-                phone: document.getElementById('phone')?.value,
-                message: document.getElementById('message')?.value,
-                attendance: document.querySelector('input[name="attendance"]:checked')?.value
-            };
-
-
-            // Gửi dữ liệu đến Google Apps Script
-            fetch(scriptURL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-                .then(response => {
-
-                    Swal.fire({
-                        title: 'Cảm ơn lời chúc phúc của bạn nha!',
-                        icon: 'success',
-                        timer: 3000
-                    });
-                    form.reset();
-                })
-                .catch(error => {
-                    Swal.fire({
-                        title: 'Tiếc quá! Có lỗi gì không gửi được rồi. Xin lỗi bạn nha!',
-                        icon: 'error',
-                        timer: 3000
-                    });
-                    console.error('Error:', error);
-                })
-                .finally(() => {
-                    loadingDiv.style.display = 'none';
-                    document.getElementById('submit').classList.remove('opacity-50', 'cursor-not-allowed');
-                    document.getElementById('submit').disabled = false;
-                });
-        });
-    </script>
     <script src="https://anonyviet.com/resource/plugin-phao-hoa-theo-chuot/fireworks.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 
