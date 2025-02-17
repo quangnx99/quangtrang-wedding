@@ -15,6 +15,7 @@
     <meta property="og:image:height" content="627" />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/index.css" />
     <link href="libs/css2.css" rel="stylesheet">
     <link href="./libs/css3.css" rel="stylesheet">
     <script src="./libs/tailwind.js"></script>
@@ -32,7 +33,6 @@
             mix-blend-mode: screen;
         }
     </style>
-    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
@@ -54,8 +54,8 @@
             }
         }
     </script>
-    <audio id="backgroundMusic" loop class="absolute top-0 right-0">
-        <source src="./images/HonCaYeu-DucPhuc-6222425.mp3" type="audio/mpeg">
+    <audio id="backgroundMusic" loop class="absolute top-0 right-0" autoplay>
+        <source src="./images/motdoi.mp3" type="audio/mpeg">
     </audio>
     <div class="w-full h-[200px] sm:h-[500px] md:h-[800px]">
         <img src="./images/bg.jpg" alt="logo" class="w-full h-full object-cover mx-auto block">
@@ -143,16 +143,30 @@
                     <img src="./images/18.jpg" alt="Cô dâu"
                         class="w-32 h-32 sm:w-40 sm:h-40 md:w-[350px] md:h-[350px] rounded-full object-cover">
                     <div class="flex-1">
-                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Nếu em có 10 thì em sẽ cho anh
-                            1, 1 gia đình nhỏ, 1 hạnh phúc to, 1 lòng bên anh trọn đời"</p>
+                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Cảm ơn Anh - Chồng của em,
+                            người đàn ông dịu dàng, người bạn luôn đồng hành cùng em . Vậy là chúng ta đã cùng nắm tay
+                            nhau đi qua suốt 09 năm thăng trầm.
+                            Cảm ơn Anh vì luôn bên cạnh em trong mọi hoàn cảnh, cùng em vượt qua những khó khăn của cuộc
+                            sống.
+                            Cảm ơn Anh đã khiến em cười, cũng giúp em gạt đi những giọt nước mắt mỗi khi em buồn. Giờ
+                            đây chúng ta sẽ chuẩn bị hành
+                            trang mới để xây dựng một gia đình nhỏ. Em sẽ cùng nắm tay Anh, ở bên cạnh Anh động viên,
+                            yêu thương Anh và gia đình của
+                            chúng ta."</p>
                         <p class="mt-2 text-sm md:text-lg text-center sm:text-right">- Huyền Trang -</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col-reverse sm:flex-row items-center justify-center gap-4 md:gap-8">
                     <div class="flex-1">
-                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Yêu em yêu cả 1 đời, thương em
-                            thương cả 1 đời thanh xuân"</p>
+                        <p class="italic text-base md:text-2xl text-center sm:text-left">"Yêu Em - Vợ của anh, người phụ
+                            nữ mạnh mẽ, là chỗ dựa tinh thần vững chắc cho anh suốt bao năm qua. Một người phụ nữ
+                            tính nóng như kem nhưng hết mực chăm lo, yêu thương, quan tâm anh. Cùng anh vượt qua vui,
+                            buồn, sướng, khổ, đi cùng anh
+                            từ khi ta chưa có gì trong tay.
+                            Thật hạnh phúc và may mắn khi được làm chồng của em. Cảm ơn em đã đến và thắp sáng ngọn lửa
+                            trong trái tim anh. Một đời
+                            yêu em😘"</p>
                         <p class="mt-2 text-sm md:text-lg text-center sm:text-left">- Xuân Quang -</p>
                     </div>
                     <img src="./images/19.jpg" alt="Chú rể"
@@ -233,8 +247,8 @@
 
         <section>
             <div
-                class="h-20 uppercase text-center bg-[#B82132] text-white font-bold flex items-center justify-center text-3xl">
-                Mừng cưới
+                class="h-20 uppercase text-center bg-[#B82132] text-white font-bold flex items-center justify-center text-3xl max-sm:text-sm">
+                Hộp mừng cưới
             </div>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 p-4 bg-white">
                 <img src="./images/quang-qr.jpg" alt="QR Code chú rể" class="w-96 h-w-96 object-contain">
@@ -243,13 +257,13 @@
             </div>
         </section>
 
-        <section class="p-4 bg-white" data-aos="fade-up">
-            <div class="flex items-center justify-center gap-4 mb-8">
-                <div class="text-center text-3xl font-bold text-gray-700">
-                    Tham dự lễ cưới của tụi mình nha?
-                </div>
+        <div
+            class="h-20 uppercase text-center bg-[#B82132] text-white font-bold flex items-center justify-center text-3xl mb-5">
+            <div class="text-center text-3xl font-bold text-white max-sm:text-sm p-2">
+                Bạn sẽ tham dự hôn lễ của chúng mình chứ?
             </div>
-
+        </div>
+        <section class="p-4 bg-white" data-aos="fade-up">
             <form class="max-w-lg mx-auto space-y-6" id="wishForm">
                 <div class="flex flex-col gap-2">
                     <label for="name" class="font-medium text-gray-700 flex gap-1 items-center">
@@ -310,22 +324,65 @@
                     </span>
                 </button>
             </form>
+
+            <div class="flex items-center justify-center mt-10 flex-col">
+                <h1 class="text-6xl text-red-900" style="font-family: 'Playfair Display', serif;">
+                    Lời cảm ơn
+                </h1>
+                <p style="font-family: 'BreathingFont';"
+                    class="text-red-900 text-2xl flex justify-end w-[30%] max-sm:w-full my-5">
+                    <span>Thank
+                        you</span>
+                </p>
+                <p class="w-[50%] max-sm:w-full text-2xl italic tracking-[2px] text-center">
+                    Cảm ơn bạn đã dành thời gian gửi lời chúc mừng đến vợ chồng mình. Lời chúc của bạn là nguồn động
+                    viên to lớn cho chúng mình trên con đường xây dựng một gia đình hạnh phúc.
+                </p>
+                <p class="w-[50%] max-sm:w-full text-2xl italic tracking-[2px] text-center">
+                    Hơn thế nữa, sự hiện diện của bạn trong hôn lễ sẽ làm cho ngày vui của chúng mình thêm trọn vẹn ❤️
+                </p>
+                <p style="font-family: 'BreathingFont';"
+                    class="text-red-900 text-2xl flex justify-end w-[30%] max-sm:w-full max-sm:justify-center mt-5">
+                    <span>From</span>
+                </p>
+                <div class="text-red-900 text-2xl flex flex-col items-end w-[50%] max-sm:w-full max-sm:justify-center"
+                    style="font-family: 'Playfair Display', serif;">
+                    <p class="uppercase">Quang & Trang</p>
+                    <p class="uppercase">with love</p>
+                </div>
+            </div>
         </section>
 
         <section id="map" class="my-5 relative flex justify-center items-center flex-col gap-2" data-aos="fade-up">
-            <div class="flex items-center justify-center gap-4 mb-8">
-                <div class="text-center text-3xl font-bold text-gray-700">
-                    Địa điểm tổ chức
-                </div>
+            <div
+                class="h-20 uppercase text-center bg-[#B82132] text-white font-bold flex items-center justify-center text-3xl mb-5 gap-2 w-full max-sm:text-sm max-sm:gap-1">
+                <p>
+                    Chúng mình đợi bạn ở đây nha
+                </p>
+                <img src="./images/meow.png" width="50" height="50" alt="">
             </div>
 
-            <div class="w-full h-[400px] px-[5%] sm:px-[20%]">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4462.849308077541!2d105.91796347586832!3d20.808965695290325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b70007a11f9b%3A0x5ac2bc97ecb93c8e!2zWHXDom4gUXVhbmcgLSBIdXnhu4FuIFRyYW5n!5e1!3m2!1svi!2s!4v1738836501316!5m2!1svi!2s"
-                    style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-[400px]"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="w-full h-[400px] px-[5%] sm:px-[20%] flex gap-5 max-sm:flex-col">
+                <div class="flex-1 flex flex-col justify-center items-center text-2xl">
+                    <b>Nhà chú rể</b>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4462.849308077541!2d105.91796347586832!3d20.808965695290325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b70007a11f9b%3A0x5ac2bc97ecb93c8e!2zWHXDom4gUXVhbmcgLSBIdXnhu4FuIFRyYW5n!5e1!3m2!1svi!2s!4v1738836501316!5m2!1svi!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-[400px]"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="flex-1 flex flex-col justify-center items-center text-2xl">
+                    <b>Nhà cô dâu</b>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.1618305447987!2d105.9547145!3d20.8251706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b1b286584b8d%3A0xc93422440340f360!2sLemo%20Doll!5e0!3m2!1sen!2s!4v1739202794921!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-[400px]"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
             </div>
-        </section>
+
+    </div>
+    </section>
     </div>
     <canvas id="fireworksCanvas">
     </canvas>

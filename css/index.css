@@ -11,7 +11,8 @@
 
 .marquee {
     white-space: nowrap;
-    animation: marquee 30s linear infinite;
+    /* animation: marquee 300s linear infinite; */
+    /* Changed animation duration to 300s to make it slower */
     display: inline-block;
     padding-left: 100%;
 }
@@ -31,4 +32,11 @@
     padding: 0 50px;
     color: #333;
     font-size: 18px;
+}
+
+@font-face {
+    font-family: 'BreathingFont';
+    src: url(breathing.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }

@@ -3,7 +3,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'playwrite': "'Playwrite IN', cursive;",
+                'playwrite': "'Playwrite IN', cursive;"
             },
         },
     },

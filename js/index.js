@@ -1,5 +1,5 @@
 
-const apiUrl = 'https://wedding-api.quangit.tech/api/wishes';
+const apiUrl = 'https://wedding-api-leu-leu.quangit.tech/api/wishes';
 
 async function loadWishes() {
     const response = await fetch(apiUrl);
@@ -47,6 +47,8 @@ function createMarquee(messages) {
     const messagesHtml = messages.map(msg =>
         `<span class="message">★ ${msg}</span>`
     ).join('');
-
+    const totalMessages = messages.length;
+    const animationDuration = totalMessages * 30;
+    marqueeContent.style.animation = `marquee ${animationDuration}s linear infinite`;
     marqueeContent.innerHTML = messagesHtml + messagesHtml;
 }
